@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/idx_requestTable"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_vertical"
+    android:showDividers="middle">
+
+    <TableRow
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/border"
+        android:weightSum="1">
+
+        <TextView
+            android:id="@+id/itemName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_weight=".30"
+            android:background="@drawable/border"
+            android:gravity="center_vertical"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="@dimen/abc_floating_window_z" />
+
+        <TextView
+            android:id="@+id/itemValue"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:layout_weight=".30"
+            android:background="@drawable/border"
+            android:gravity="center_vertical"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="@dimen/abc_floating_window_z" />
+
+        <TextView
+            android:id="@+id/itemNextBidValue"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_column="2"
+            android:layout_weight=".30"
+            android:background="@drawable/border"
+            android:gravity="center_vertical"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="@dimen/abc_floating_window_z" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight=".10">
+
+            <ImageView
+                android:id="@+id/itemImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="3"
+                android:gravity="center_horizontal"
+                android:textSize="@dimen/abc_floating_window_z"
+                android:src="@android:drawable/btn_star_big_on" />
+        </LinearLayout>
+    </TableRow>
+</TableLayout>
